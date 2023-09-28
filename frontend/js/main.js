@@ -13,7 +13,7 @@ createApp({
       .get("http://localhost/php-dischi-json/backend/dischi.php")
       .then((response) => {
         this.dischiList = response.data;
-        console.log(this.dischiList[0]);
+        // console.log(response);
       });
   },
 }).mount("#app");
